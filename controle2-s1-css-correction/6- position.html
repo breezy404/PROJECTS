@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            
+            
+            
+            .container{
+                
+                border: 3px solid black;
+                width: 545px;
+                height: 545px;
+                padding: 10px;
+                position: relative;
+            }
+            
+            
+            
+            .d1,.d4{
+                width: 430px;
+            }
+            .d2,.d3{
+                height: 430px;
+            }
+            .d2,.d3,.d7,.d6,.d9{
+                width: 100px;
+            }
+            .d1,.d4,.d5,.d8,.d9{
+                height: 100px;
+            }
+            .d6,.d7{
+                height: 210px;
+            }
+            .d5,.d8{
+                width: 210px;
+            }
+            
+            .d1,.d2{
+                top: 10px;
+            }
+            
+            .d3,.d5,.d6{
+                top: 120px;
+            }
+            .d7,.d9{
+                top: 230px;
+            }
+            .d8{
+                top: 340px;
+            }
+            .d4{
+                top: 450px
+            }
+            .d1,.d3{
+                left: 10;
+            }
+            .d4,.d5,.d7{
+                left: 120px;
+            }
+            .d9,.d8{
+                left: 230px;
+            }
+            .d6{
+                left: 340px;
+            }
+            .d2{
+                left: 450px;
+            }
+            
+           
+            
+            .container div{
+                /* Centre le texte */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+                font-size: 30px;
+                border: 1px solid black;
+                position: absolute;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+            <div class="d7">7</div>
+            <div class="d8">8</div>
+            <div class="d9">9</div>
+        </div>
+    </body>
+</html>
