@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .container{
+                position: relative;
+                border: 3px solid black;
+                width: 500px;
+                height: 500px;
+            }
+            .triangle{
+                width: 400px;
+                height: 400px;
+                background-color: gray;
+                clip-path: polygon(0 0,100% 0,0 100%);
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                
+            }
+            
+            .cercle{
+                height: 100px;
+                width: 100px;
+                opacity: 60%;
+                background-color: red;
+                border-radius: 50%;
+                animation-name: anim;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                position: absolute;
+                border: 3px solid black;
+                
+                
+                
+            }
+            
+            @keyframes anim {
+                0%{
+                    left: 0;
+                    top: 0px;
+                    background-color: red;
+                }
+                33.33%{
+                    left: 400px;
+                    top: 0;
+                    background-color: green;
+                }
+                
+                66.66%{
+                    left: 0;
+                    top: 400px;
+                    background-color: blue;
+                }
+                100%{
+                    left: 0;
+                    top: 0;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="triangle">
+
+            </div> 
+            <div class="cercle">
+
+            </div>
+        </div>
+    </body>
+</html>
