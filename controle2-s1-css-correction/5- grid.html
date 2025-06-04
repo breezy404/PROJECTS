@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: repeat(5,100px);
+                grid-template-rows: repeat(5,100px);
+                gap: 10px;
+                border: 3px solid black;
+                width: fit-content;
+                padding: 10px;
+                
+            }
+            .container div{
+                background-color: ;
+                border: 1px solid black;
+            }
+            
+            .container div:nth-child(1){
+                grid-area: 1 / 1 / 2 / 5;
+            }
+            
+            .container div:nth-child(2){
+                grid-area: 1 / 5 / 5 / 6;
+            }
+            
+            .container div:nth-child(3){
+                grid-area: 2 / 1 / 6 / 2;
+            }
+            
+            .container div:nth-child(4){
+                grid-area: 5 / 2 / 6 / 6;
+            }
+            .container div:nth-child(5){
+                grid-area: 2 / 2 / 3 / 4;
+            }
+            .container div:nth-child(6){
+                grid-area: 2 / 4 / 4 / 4;
+            }
+            .container div:nth-child(7){
+                grid-area: 3 / 2 / 5 / 3;
+            }
+            .container div:nth-child(8){
+                grid-area: 4 / 3 / 5 / 5;
+            }
+            
+            .container div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </body>
+</html>
